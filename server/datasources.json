@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "postgres": {
+    "host": "postgres_test",
+    "port": 5432,
+    "url": "postgres://postgres:Witsawa122333@postgres_test:5432/postgres",
+    "database": "docker",
+    "password": "Witsawa122333",
+    "name": "postgres",
+    "user": "postgres",
+    "connector": "postgresql"
+  }
+}

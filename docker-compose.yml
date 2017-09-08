@@ -1,0 +1,19 @@
+version: '3'
+services:
+  server:
+    build: '.'
+    image: 'server_test'
+    tty: true
+    ports:
+      - 3001:3000
+    environment:
+      VIRTUAL_HOST: dockertest.jumpso.cool
+      LETSENCRYPT_HOST: dockertest.jumpso.cool
+      LETSENCRYPT_EMAIL: jump11193@gmail.com
+      VIRTUAL_PORT: 3000
+  postgres_test:
+    image: 'postgres'
+    environment:
+      POSTGRES_PASSWORD: Witsawa122333
+    ports:
+      - 6000:5432
